@@ -1,0 +1,54 @@
+:root {
+    --body-text-shadow: 0 0 20px #000, 0 0 20px #AAA;
+    --default-line-height: 2;
+}
+
+h1 {
+    text-shadow: var(--body-text-shadow);
+    font-family: Montserrat, monospace;
+}
+
+p {
+    text-shadow: var(--body-text-shadow);
+    font-family: Montserrat, monospace;
+}
+
+a {
+    text-shadow: var(--body-text-shadow);
+    font-family: Montserrat, monospace;
+    color: #8554ff;
+    line-height: var(--default-line-height);
+}
+
+footer {
+    text-align: center;
+    color: white;
+    text-shadow: var(--body-text-shadow);
+    font-family: Montserrat, monospace;
+    line-height: var(--default-line-height);
+}
+
+#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#maintd {
+    width: 600px;
+    vertical-align: baseline;
+}
+
+#menutd {
+    width: 200px;
+    vertical-align: baseline;
+}
+
+.box {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #00000055;
+    backdrop-filter:blur(10px);
+}

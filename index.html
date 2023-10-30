@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Plazmin</title>
-    </head>
-    <body>
-        <p>Hello, world!</p>
-        <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
-        <script>
-            bubbly({
-                bubbles: {
-                    count: 30,
-                    radius: () => 10 + Math.random() * window.innerWidth / 25,
-                    fill: () => `hsla(0, 0%, 100%, ${Math.random() * 0.1})`,
-                    angle: () => Math.random() * Math.PI * 2,
-                    velocity: () => 0.1 + Math.random() * 0.5,
-                    shadow: () => (null),
-                    stroke: () => ({ color: "rgba(255, 255, 255, 0)", width: 0 }),
-                },
-                background: (ctx) => {
-                    const gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-                    gradient.addColorStop(0, "#261575");
-                    gradient.addColorStop(1, "#36229c");
-                    return gradient;
-                },
-                animate: true,
-            });
-        </script>
-    </body>
+<head>
+    <title>Plazmin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tbody>
+                <tr>
+                    <td id="maintd">
+                        <div id="mainbox" class="box">
+                            <h1>Plazmin's Hub</h1>
+                            <img src="res/plazmin_pfp.png" width="128px" />
+                            <p>
+                                hi i'm plazmin and i'm a gamedev and yada yada i'm just putting placeholder text lorum ipsum dolor sit amet heheehe
+                            </p>
+                        </div>
+                    </td>
+
+                    <td id="menutd" style="max-width: 225px">
+                        <div id="mainbox" class="box">
+                            <h1>Socials:</h1>
+                            <a href="https://www.youtube.com/Plazmin" target="_blank">Youtube</a><br />
+                            <a href="https://twitter.com/ThePlaz42" target="_blank">Twitter</a><br />
+                            <a href="https://plazmin.itch.io/" target="_blank">itch.io</a><br />
+                            <a href="https://www.tumblr.com/plazmindev" target="_blank">Tumblr</a><br />
+                            <a href="https://github.com/PlazminDev" target="_blank">GitHub</a><br />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <footer>
+            <!--
+            <span>(c) 2023-2023 Plazmin. All Rights Reserved.</span>
+            <br />
+            <a href="mailto:endermanrapman@gmail.com">Email Me</a>
+            -->
+        </footer>
+    </div>
+    <script src="bubbly-bg.js"></script>
+    <!--bubbly stuff-->>
+    <script>
+        bubbly({
+            bubbles: {
+                count: 30,
+                radius: () => 10 + Math.random() * window.innerWidth / 25,
+                fill: () => `hsla(0, 0%, 100%, ${Math.random() * 0.1})`,
+                angle: () => Math.random() * Math.PI * 2,
+                velocity: () => 0.1 + Math.random() * 0.5,
+                shadow: () => (null),
+                stroke: () => ({ color: "rgba(255, 255, 255, 0)", width: 0 }),
+            },
+            background: (ctx) => {
+                const gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
+                gradient.addColorStop(0, "#261575");
+                gradient.addColorStop(1, "#170e47");
+                return gradient;
+            },
+            animate: true,
+        });
+    </script>
+</body>
 </html>
