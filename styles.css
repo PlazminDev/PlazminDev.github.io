@@ -1,11 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
-    text-align:center;
+    text-align: center;
     background: url("res/banner.png");
 }
 
-main{
+main {
     margin: 20px;
 }
 
@@ -16,14 +16,13 @@ main{
 
 h2 {
     font-family: Kanit;
-    color:white;
-    font-size:32px;
-    text-align:left;
+    color: white;
+    font-size: 32px;
+    text-align: left;
 }
 
-.navigation
-{
-    min-height:50px;
+.navigation {
+    min-height: 50px;
 }
 
     .navigation ul {
@@ -38,25 +37,24 @@ h2 {
         display: inline-block;
     }
 
-.navigation a {
-    color: white;
-    padding: 15px;
-    display: block;
-    text-align: center;
-    font-family: Kanit;
-    font-size: 20px;
-    text-decoration: none;
-    min-height:100%;
-}
+    .navigation a {
+        color: white;
+        padding: 15px;
+        display: block;
+        text-align: center;
+        font-family: Kanit;
+        font-size: 20px;
+        text-decoration: none;
+        min-height: 100%;
+    }
 
-.navigation a:hover{
-    background-color: hsl(255 0% 100% / 0.32)
-}
+        .navigation a:hover {
+            background-color: hsl(255 0% 100% / 0.32)
+        }
 
-.navigation li
-{
-    float:right;
-}
+    .navigation li {
+        float: right;
+    }
 
 .title {
     font-family: Kanit;
@@ -81,13 +79,13 @@ p {
     color: white;
     font-size: 22px;
     font-family: Kanit;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .uo-list {
     color: white;
     font-size: 22px;
     font-family: Kanit;
-    text-align:left;
+    text-align: left;
 }
