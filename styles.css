@@ -14,21 +14,29 @@ main{
     padding: 0px;
 }
 
+h2 {
+    font-family: Kanit;
+    color:white;
+    font-size:32px;
+    text-align:left;
+}
+
 .navigation
 {
     min-height:50px;
 }
 
-.navigation ul {
-    list-style-type: none;
-    color: hsl(0, 0%, 0%, 0.60);
-    backdrop-filter: blur(10px);
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    border-bottom-width: 5px;
-    border-bottom-style: solid;
-}
+    .navigation ul {
+        list-style-type: none;
+        color: hsl(0, 0%, 0%, 0.60);
+        backdrop-filter: blur(10px);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        display: inline-block;
+    }
 
 .navigation a {
     color: white;
@@ -55,11 +63,14 @@ main{
     font-size: 82px;
     color: black;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 .panel {
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 220px;
+    margin-right: 220px;
     color: #000000;
     backdrop-filter: blur(10px) brightness(40%);
     border-radius: 25px;
@@ -72,4 +83,11 @@ p {
     font-family: Kanit;
     padding-top:20px;
     padding-bottom:20px;
+}
+
+.uo-list {
+    color: white;
+    font-size: 22px;
+    font-family: Kanit;
+    text-align:left;
 }
