@@ -18,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\David\\Programming\\PlazminDev.github.io\\style.css",
-              "RelativeDocumentMoniker": "style.css",
-              "ToolTip": "C:\\Users\\David\\Programming\\PlazminDev.github.io\\style.css",
-              "RelativeToolTip": "style.css",
-              "ViewState": "AQIAABUAAAAAAAAAAAAcwDQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2023-10-30T20:09:12.805Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,9 +28,22 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\David\\Programming\\PlazminDev.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAsAQAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2023-10-30T02:47:59.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\David\\Programming\\PlazminDev.github.io\\style.css",
+              "RelativeDocumentMoniker": "style.css",
+              "ToolTip": "C:\\Users\\David\\Programming\\PlazminDev.github.io\\style.css",
+              "RelativeToolTip": "style.css",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2023-10-30T20:09:12.805Z",
               "EditorCaption": ""
             }
           ]

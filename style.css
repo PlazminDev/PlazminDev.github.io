@@ -1,54 +1,75 @@
-:root {
-    --body-text-shadow: 0 0 20px #000, 0 0 20px #AAA;
-    --default-line-height: 2;
+body {
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    background: url(res/banner.png);
 }
 
-h1 {
-    text-shadow: var(--body-text-shadow);
-    font-family: Montserrat, monospace;
+main{
+    margin: 20px;
+}
+
+.header {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navigation
+{
+    min-height:50px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    color: hsl(0, 0%, 0%, 0.60);
+    backdrop-filter: blur(10px);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+}
+
+.navigation a {
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-family: Kanit;
+    font-size: 20px;
+    text-decoration: none;
+    min-height:100%;
+}
+
+.navigation a:hover{
+    background-color: hsl(255 0% 100% / 0.32)
+}
+
+.navigation li
+{
+    float:right;
+}
+
+.title {
+    font-family: Kanit;
+    font-size: 82px;
+    color: black;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
+}
+
+.panel {
+    margin-left: 90px;
+    margin-right: 90px;
+    color: #000000;
+    backdrop-filter: blur(10px) brightness(40%);
+    border-radius: 25px;
+    min-height: 50px;
 }
 
 p {
-    text-shadow: var(--body-text-shadow);
-    font-family: Montserrat, monospace;
-}
-
-a {
-    text-shadow: var(--body-text-shadow);
-    font-family: Montserrat, monospace;
-    color: #8554ff;
-    line-height: var(--default-line-height);
-}
-
-footer {
-    text-align: center;
     color: white;
-    text-shadow: var(--body-text-shadow);
-    font-family: Montserrat, monospace;
-    line-height: var(--default-line-height);
-}
-
-#container {
-    width: 900px;
-    margin: 0 auto;
-}
-
-#maintd {
-    width: 600px;
-    vertical-align: baseline;
-}
-
-#menutd {
-    width: 200px;
-    vertical-align: baseline;
-}
-
-.box {
-    border: 2px solid #fff;
-    border-radius: 20px;
-    color: white;
-    padding: 10px 15px;
-    margin: 5px;
-    background-color: #00000055;
-    backdrop-filter:blur(10px);
+    font-size: 22px;
+    font-family: Kanit;
+    padding-top:20px;
+    padding-bottom:20px;
 }

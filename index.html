@@ -2,69 +2,38 @@
 <html>
 <head>
     <title>Plazmin</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e03d5128f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="container">
-        <table>
-            <tbody>
-                <tr>
-                    <td id="maintd">
-                        <div id="mainbox" class="box">
-                            <h1>Plazmin's Hub</h1>
-                            <img src="res/plazmin_pfp.png" width="128px" />
-                            <p>
-                                <iframe frameborder="0" src="https://itch.io/embed/2470942?linkback=true&amp;bg_color=050404&amp;fg_color=ffffff&amp;link_color=fa9f5b&amp;border_color=333333" width="208" height="167"><a href="https://plazmin.itch.io/gone-fishing">Gone Fishing by Plazmin</a></iframe>
-                            </p>
-                        </div>
-                    </td>
-
-                    <td id="menutd" style="max-width: 225px">
-                        <div id="mainbox" class="box">
-                            <h1>Socials:</h1>
-                            <a href="https://www.youtube.com/Plazmin" target="_blank">Youtube</a><br />
-                            <a href="https://twitter.com/ThePlaz42" target="_blank">Twitter</a><br />
-                            <a href="https://plazmin.itch.io/" target="_blank">itch.io</a><br />
-                            <a href="https://www.tumblr.com/plazmindev" target="_blank">Tumblr</a><br />
-                            <a href="https://github.com/PlazminDev" target="_blank">GitHub</a><br />
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br />
-        <footer>
-            <!--
-            <span>(c) 2023-2023 Plazmin. All Rights Reserved.</span>
-            <br />
-            <a href="mailto:endermanrapman@gmail.com">Email Me</a>
-            -->
-        </footer>
+    <div class="header">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="#games">Games</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="">Home</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <script src="bubbly-bg.js"></script>
-    <!--bubbly stuff-->>
-    <script>
-        bubbly({
-            bubbles: {
-                count: 30,
-                radius: () => 10 + Math.random() * window.innerWidth / 25,
-                fill: () => `hsla(0, 0%, 100%, ${Math.random() * 0.1})`,
-                angle: () => Math.random() * Math.PI * 2,
-                velocity: () => 0.1 + Math.random() * 0.5,
-                shadow: () => (null),
-                stroke: () => ({ color: "rgba(255, 255, 255, 0)", width: 0 }),
-            },
-            background: (ctx) => {
-                const gradient = ctx.createLinearGradient(0, 0, 0, ctx.canvas.height);
-                gradient.addColorStop(0, "#261575");
-                gradient.addColorStop(1, "#170e47");
-                return gradient;
-            },
-            animate: true,
-        });
-    </script>
+
+    <h1 class="title">Plazmin</h1>
+
+    <div class="panel">
+        <p style="padding-left:50px; padding-right:50px">
+            Welcome to Plazmin's website!<br>
+        </p>
+    </div>
 </body>
 </html>
