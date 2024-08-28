@@ -11,7 +11,7 @@
           type="image/png"
           href="res/pfp_narty.png">
 </head>
-<body>
+<body onload="start()">
     <div class="header">
         <nav class="navigation">
             <ul>
@@ -31,7 +31,10 @@
                     <a href="games.html">Games</a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="blog.html">
+                        <span class="dot" id="notif" style="display:none;"></span>
+                        Blog
+                    </a>
                 </li>
                 <li>
                     <a href="about.html">About</a>
@@ -45,12 +48,11 @@
 
     <h1 class="title">Plazmin</h1>
 
-    <div class="panel">
+    <div class="panel" style="margin:auto;">
         <p style="padding-left:50px; padding-right:50px">
             Welcome to my website!<br>
             It's still very much a WIP<br>
             <br>
-            My Most Recent Video:<br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NjDO8feNy58?si=XejADyiwfZcQIptW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </p>
 
@@ -58,6 +60,7 @@
             Want to ask me something?
             <a href="mailto:endermanrapman@gmail.com">Email Me</a><br>
         </p>
+        <script src="index.js"></script>
     </div>
 </body>
 </html>
