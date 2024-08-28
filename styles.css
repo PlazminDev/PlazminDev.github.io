@@ -2,7 +2,10 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: center;
+    background-color: black;
     background: url("res/banner.png");
+    background-repeat: repeat;
+    background-size: cover;
 }
 
 main {
@@ -12,6 +15,14 @@ main {
 .header {
     margin: 0px;
     padding: 0px;
+}
+
+.banner-img {
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 30px;
+    /*image-rendering:pixelated;*/
 }
 
 h2 {
@@ -67,8 +78,8 @@ h2 {
 }
 
 .panel {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 2em;
+    margin-right: 2em;
     color: #000000;
     backdrop-filter: blur(10px) brightness(40%);
     border-radius: 25px;
