@@ -1,19 +1,32 @@
 const blogVersion = 1;
 
 function start() {
-    if (!localStorage.getItem("blogversion")) {
-        localStorage.setItem("blogversion", 0);
+    if (document.cookie == "") {
+        document.cookie = "blogversion=" + 0;
     }
 
-    if (localStorage.getItem("blogversion") < blogVersion) {
+    if (getCookie("blogversion") < blogVersion) {
         document.getElementById("notif").style.display = "block";
     }
 }
 
-function refreshNotif() {
-    if (!localStorage.getItem("blogversion")) {
-        localStorage.setItem("blogversion", blogVersion);
-    } else {
-        localStorage.setItem("blogversion", blogVersion);
+// https://www.w3schools.com/js/js_cookies.asp
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
+    return "";
+}
+
+function refreshNotif() {
+    document.cookie = "blogversion=" + blogVersion;
 }
