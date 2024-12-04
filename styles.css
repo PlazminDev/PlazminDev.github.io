@@ -2,10 +2,9 @@ body {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    background-color: black;
     background: url("res/banner.png");
-    background-repeat: repeat;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 }
 
 .dot {
@@ -27,14 +26,6 @@ main {
     padding: 0px;
 }
 
-.banner-img {
-    width: 90%;
-    padding: 20px;
-    margin: auto;
-    border-radius: 30px;
-    /*image-rendering:pixelated;*/
-}
-
 h2 {
     font-family: Kanit;
     color: white;
@@ -49,7 +40,7 @@ h2 {
     .navigation ul {
         list-style-type: none;
         color: hsl(0, 0%, 0%, 0.60);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(20px);
         padding: 0px;
         margin: 0px;
         overflow: hidden;
@@ -59,6 +50,8 @@ h2 {
     }
 
     .navigation a {
+        backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 25%);
         color: white;
         padding: 15px;
         display: block;
@@ -67,35 +60,143 @@ h2 {
         font-size: 20px;
         text-decoration: none;
         min-height: 100%;
-        min-width:60px;
+        min-width: 100px;
     }
 
         .navigation a:hover {
-            background-color: hsl(255 0% 100% / 0.32)
+            background-color: hsl(255 0% 100% / 0.32);
         }
 
     .navigation li {
         float: right;
     }
 
+@keyframes spacing {
+    0% {
+        letter-spacing: -40px;
+        transform: scale(0.0);
+    }
+
+    100% {
+        letter-spacing: 0px;
+        transform: scale(1.0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4300e6, 0 0 40px #4300e6, 0 0 50px #4300e6, 0 0 60px #4300e6, 0 0 70px #4300e6;
+    }
+
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
+    }
+}
+
 .title {
     font-family: Kanit;
     font-size: 82px;
     color: black;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
+    letter-spacing: 0px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    animation: pulse 2s, spacing 1.2s;
+    animation-timing-function: linear, cubic-bezier(1,0,0,1);
+    animation-iteration-count: infinite, 1;
+}
+
+.panel {
+    margin:auto;
+    margin-top:1em;
+    color: #000000;
+    backdrop-filter: blur(10px) brightness(40%);
+    border-radius: 25px;
+    min-height: 50px;
+    width:100%;
+    padding-top:20px;
+}
+
+.maindiv{
+    margin:auto;
+    max-width:800px;
+}
+
+.label {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: Kanit;
+    font-weight: 800;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(117,0,255,.5) 0%, rgba(146,94,255,.5) 100%);
+    margin: .5em;
+    border-radius: 1em;
+    border-top-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    backdrop-filter: blur(10px);
+}
+
+.gametabs {
+    width:100%;
+    margin:auto;
+    padding: 40px 0px 40px 0px;
+}
+
+.gamepanel {
+    transform: skew(-5deg) translateY(0px);
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 7px 20px 7px 20px;
+    border-radius: 25px;
+    min-height: 4em;
+    transition: .2s;
+    width: 80%;
+    box-shadow: 10px 10px 12px 0px #220040;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
 
-.panel {
-    margin-left: 2em;
-    margin-right: 2em;
-    color: #000000;
-    backdrop-filter: blur(10px) brightness(40%);
+    .gamepanel:hover {
+        transform: skew(-15deg) translateY(-10px) scale(1.05);
+    }
+    /*
+    .gamepanel:active {
+        transform: skew(-10deg) translateY(-7px) scale(0.95);
+    }
+    */
+
+.game-img {
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
     border-radius: 25px;
-    min-height: 50px;
-    max-width:80%;
+    backdrop-filter: blur(10px);
+}
+
+.panel-name {
+    font-size: 1.75em;
+    text-align: left;
+    float: left;
+    width: 75%;
+    font-family: Kanit;
+    font-weight: 500;
+    color: white;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    text-shadow: 2px 2px 10px #000000;
 }
 
 p {
@@ -111,4 +212,32 @@ p {
     font-size: 22px;
     font-family: Kanit;
     text-align: left;
+}
+
+iframe {
+    border: 5px solid rgba(147, 112, 219, 1);
+    border-radius: 10px;
+}
+
+.alink {
+    background-image: linear-gradient(to top, #5b00a3 20%, #ab4bff);
+    border: 3px solid #bc70ff;
+    padding: 4px 16px 2px 16px;
+    white-space: nowrap;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    border-radius: 8px;
+    float: right;
+    font-family: Kanit;
+    margin-left:5px;
+}
+
+.panel-links {
+    clear: both;
+    text-align: center;
+    overflow-wrap: normal;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }

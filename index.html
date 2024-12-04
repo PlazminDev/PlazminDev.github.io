@@ -7,11 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3e03d5128f.js" crossorigin="anonymous"></script>
+    <script src="parallax.js"></script>
     <link rel="icon"
           type="image/png"
           href="res/favicon.png">
 </head>
-<body onload="start()">
+<body>
     <div class="header">
         <nav class="navigation">
             <ul>
@@ -27,40 +28,70 @@
                 <li>
                     <a href="https://www.youtube.com/@Plazmin" target="_blank"><i class="fa-brands fa-youtube"></i></a>
                 </li>
-                <li>
-                    <a href="games.html">Games</a>
-                </li>
-                <li>
-                    <a href="blog.html">
-                        <span class="dot" id="notif" style="display:none;"></span>
-                        Blog
-                    </a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
             </ul>
         </nav>
     </div>
 
     <h1 class="title">Plazmin</h1>
 
-    <div class="panel" style="margin:auto;">
-        <p style="padding-left:50px; padding-right:50px">
-            Welcome to my website!<br>
-            It's still very much a WIP<br>
-            <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NjDO8feNy58?si=XejADyiwfZcQIptW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </p>
-
-        <p style="padding-left:50px; padding-right:50px">
-            Want to ask me something?
-            <a href="mailto:endermanrapman@gmail.com">Email Me</a><br>
-        </p>
-        <script src="index.js"></script>
+    <div class="maindiv">
+        <div class="panel">
+            <div class="label">Welcome!</div>
+            <p style="padding-left:50px; padding-right:50px">
+                Hello! I'm Plazmin!<br><br>
+                I'm a 17 year old trans girl who loves rabbits, WALL-E, and Ginger Ale!<br>
+                I'm also a Game Developer / Programmer with 4+ years of experience!<br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NjDO8feNy58?si=XejADyiwfZcQIptW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </p>
+        </div>
+        <div class="panel">
+            <div class="label">Games</div>
+            <div class="gametabs">
+                <div class="gamepanel">
+                    <div class="game-img" style="background-image: url('res/gone_fishing.png');"></div>
+                    <div class="panel-name">Gone Fishing</div>
+                    <div class="panel-links">
+                        <a class="alink" href="https://plazmin.itch.io/gone-fishing" target="_blank">itch.io</a>
+                    </div>
+                </div>
+                <div class="gamepanel">
+                    <div class="game-img" style="background-image: url('res/aequor.png');"></div>
+                    <div class="panel-name">Aequor</div>
+                    <div class="panel-links">
+                        <a class="alink" href="https://plazmin.itch.io/aequor" target="_blank">itch.io</a>
+                    </div>
+                </div>
+                <div class="gamepanel">
+                    <div class="game-img" style="background-image: url('res/arachnidroids.png');"></div>
+                    <div class="panel-name">Arachnidroids</div>
+                    <div class="panel-links">
+                        <a class="alink" href="https://plazmin.itch.io/arachnidroids" target="_blank">itch.io</a>
+                    </div>
+                </div>
+                <div class="gamepanel">
+                    <div class="game-img" style="background-image: url('res/anemoia.png');"></div>
+                    <div class="panel-name">Anemoia</div>
+                    <div class="panel-links">
+                        <a class="alink" href="https://plazmin.itch.io/anemoia" target="_blank">itch.io</a>
+                    </div>
+                </div>
+                <div class="gamepanel">
+                    <div class="game-img" style="background-image: url('res/spheredash.png');"></div>
+                    <div class="panel-name">Sphere Dash</div>
+                    <div class="panel-links">
+                        <a class="alink" href="https://plazmin.itch.io/sphere-dash" target="_blank">itch.io</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="label">Contact</div>
+            <p style="padding-left:50px; padding-right:50px">
+                Want to ask me something?
+                <a href="mailto:endermanrapman@gmail.com">Email Me!</a><br>
+            </p>
+        </div>
     </div>
 </body>
 </html>
