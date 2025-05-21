@@ -1,117 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plazmin</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Plazmin's Website!</title>
+    <link href="styles.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/3e03d5128f.js" crossorigin="anonymous"></script>
-    <script src="parallax.js"></script>
-    <link rel="icon"
-          type="image/png"
-          href="res/favicon.png">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Fira Sans-->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Zen Dots-->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="header">
-        <nav class="navigation">
-            <ul>
-                <li>
-                    <a href="https://www.youtube.com/@Plazmin" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://bsky.app/profile/plazmin.bsky.social" target="_blank"><i class="fa-brands fa-bluesky"></i></a>
-                </li>
-                <li>
-                    <a href="https://plazmin.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-                </li>
-                <li>
-                    <a href="https://github.com/PlazminDev" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <h1 class="title">Plazmin</h1>
-
-    <div class="maindiv">
-        <div class="panel">
-            <div class="label">Welcome!</div>
-            <p style="padding-left:50px; padding-right:50px">
-                Hello! I'm Plazmin!<br><br>
-                I'm a 17 year old trans girl who loves rabbits, WALL-E, and Ginger Ale!<br>
-                I'm also a Game Developer / Programmer with 4+ years of experience!<br>
-                <br>
-                she/her
-                <br>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NjDO8feNy58?si=XejADyiwfZcQIptW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </p>
-        </div>
-        <div class="panel">
-            <div class="label">Blog</div>
-            <div class="gametabs">
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('blog/introtome/banner.png');"></div>
-                    <div class="panel-name">Who Am I?</div>
-                    <div class="panel-subtext">December 4, 2024</div>
-                    <div class="panel-links">
-                        <a class="alink" href="blog/introtome/introtome.html">Read</a>
-                    </div>
-                </div>
+    <body onload="onLoad()">
+        <script src="index.js"></script>
+        <div class="container">
+            <div class="panel" id="header">
+                <h1 onclick="addBunny()" id="title" style="text-align:center">PLAZMIN</h1>
+                <!--<button onclick="addBunny()">Rabbit</button>-->
+            </div>
+            <div class="panel" id="main-content">
+                <h2>
+                    Latest Video:
+                </h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/T93PeEc2M8M?si=pLb05OJnCdyNXyOm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                This site is still a work in progress
+            </div>
+            <div class="panel" id="side-bar">
+                <h1 style="text-align:center;">Directory</h1>
+                <hr>
+                <a id="link" href="index.html">Home</a>
+                <a id="link" href="about.html">About</a>
+                <!--<a id="link" href="index.html">Blog</a>-->
+            </div>
+            <div class="panel" id="links">
+                <h1 style="text-align:center;">Links</h1>
+                <hr>
+                <a id="link" target="_blank" href="https://www.youtube.com/@Plazmin"><i class="fa-brands fa-youtube" aria-hidden="true"></i> Youtube</a>
+                <a id="link" target="_blank" href="https://plazmin.bsky.social"><i class="fa-brands fa-bluesky" aria-hidden="true"></i> Bluesky</a>
+                <a id="link" target="_blank" href="https://github.com/PlazminDev"><i class="fa-brands fa-github" aria-hidden="true"></i> Github</a>
+                <a id="link" target="_blank" href="https://plazmin.itch.io"><i class="fa-brands fa-itch-io" aria-hidden="true"></i> itch.io</a>
+            </div>
+            <div class="panel" id="footer">
+                <h2 style="text-align:center">Contact</h2>
+                <a id="link" href="mailto:endermanrapman@gmail.com">Email Me!</a>
+                <p>Violet Mignone 2007-2025</p>
             </div>
         </div>
-        <div class="panel">
-            <div class="label">Games</div>
-            <div class="gametabs">
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('res/gone_fishing.png');"></div>
-                    <div class="panel-name">Gone Fishing</div>
-                    <div class="panel-subtext">April 13, 2024</div>
-                    <div class="panel-links">
-                        <a class="alink" href="https://plazmin.itch.io/gone-fishing" target="_blank">itch.io</a>
-                    </div>
-                </div>
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('res/aequor.png');"></div>
-                    <div class="panel-name">Aequor</div>
-                    <div class="panel-subtext">August 29, 2023</div>
-                    <div class="panel-links">
-                        <a class="alink" href="https://plazmin.itch.io/aequor" target="_blank">itch.io</a>
-                    </div>
-                </div>
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('res/arachnidroids.png');"></div>
-                    <div class="panel-name">Arachnidroids</div>
-                    <div class="panel-subtext">July 17, 2022</div>
-                    <div class="panel-links">
-                        <a class="alink" href="https://plazmin.itch.io/arachnidroids" target="_blank">itch.io</a>
-                    </div>
-                </div>
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('res/anemoia.png');"></div>
-                    <div class="panel-name">Anemoia</div>
-                    <div class="panel-subtext">Febuary 26, 2022</div>
-                    <div class="panel-links">
-                        <a class="alink" href="https://plazmin.itch.io/anemoia" target="_blank">itch.io</a>
-                    </div>
-                </div>
-                <div class="gamepanel">
-                    <div class="game-img" style="background-image: url('res/spheredash.png');"></div>
-                    <div class="panel-name">Sphere Dash</div>
-                    <div class="panel-subtext">May 27, 2020</div>
-                    <div class="panel-links">
-                        <a class="alink" href="https://plazmin.itch.io/sphere-dash" target="_blank">itch.io</a>
-                    </div>
-                </div>
-            </div>
+        <div id="rabbitContainer">
+
         </div>
-        <div class="panel">
-            <div class="label">Contact</div>
-            <p style="padding-left:50px; padding-right:50px">
-                Want to ask me something?
-                <a href="mailto:endermanrapman@gmail.com">Email Me!</a><br>
-            </p>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

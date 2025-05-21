@@ -1,282 +1,126 @@
+html {
+    height:100%;
+}
+
 body {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    background: url("res/banner_tiny.png");
-    background-size:100%;
-    background-attachment: scroll;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    background-color: #ff3f3fff;
-    border-radius: 50%;
-    text-decoration: none;
-    position: fixed;
-    z-index:-1;
-}
-
-main {
-    margin: 20px;
-}
-
-.header {
-    margin: 0px;
-    padding: 0px;
-}
-
-h2 {
-    font-family: Kanit;
-    color: white;
-    font-size: 32px;
-    text-align: left;
-}
-
-.navigation {
-    min-height: 50px;
-    max-width:100%;
-}
-
-    .navigation ul {
-        list-style-type: none;
-        color: hsl(0, 0%, 0%, 0.60);
-        backdrop-filter: blur(20px);
-        padding: 0px;
-        margin: 0px;
-        overflow: hidden;
-        border-bottom-width: 5px;
-        border-bottom-style: solid;
-        display: inline-block;
-    }
-
-    .navigation a {
-        backdrop-filter: blur(3px);
-        background-color: rgba(0, 0, 0, 25%);
-        color: white;
-        padding: 15px;
-        display: block;
-        text-align: center;
-        font-family: Kanit;
-        font-size: 20px;
-        text-decoration: none;
-        min-height: 100%;
-        min-width: 100px;
-        transition-duration:0.5s;
-    }
-
-        .navigation a:hover {
-            background-color: hsl(255 0% 100% / 0.32);
-        }
-
-        .navigation a:active {
-            background-color: hsl(255 0% 100% / 0.75);
-        }
-
-    .navigation li {
-        float: left;
-    }
-
-@keyframes spacing {
-    0% {
-        letter-spacing: -40px;
-        transform: scale(0.0);
-    }
-
-    100% {
-        letter-spacing: 0px;
-        transform: scale(1.0);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
-    }
-
-    50% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4300e6, 0 0 40px #4300e6, 0 0 50px #4300e6, 0 0 60px #4300e6, 0 0 70px #4300e6;
-    }
-
-    100% {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #8900e6, 0 0 40px #8900e6, 0 0 50px #8900e6, 0 0 60px #8900e6, 0 0 70px #8900e6;
-    }
-}
-
-.title {
-    font-family: Kanit;
-    font-size: 82px;
-    color: black;
-    letter-spacing: 0px;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    animation: pulse 2s, spacing 1.2s;
-    animation-timing-function: linear, cubic-bezier(1,0,0,1);
-    animation-iteration-count: infinite, 1;
-}
-
-.panel {
-    margin:auto;
-    margin-top:1em;
-    color: #000000;
-    backdrop-filter: blur(10px) brightness(40%);
-    border-radius: 25px;
-    min-height: 50px;
-    width:100%;
-    padding-top:20px;
-}
-
-.maindiv{
-    margin:auto;
-    max-width:800px;
-}
-
-.label {
-    font-size: 2.5em;
-    text-align: center;
-    font-family: Kanit;
-    font-weight: 800;
-    color: white;
-    background-image: linear-gradient(0deg, rgba(117,0,255,.5) 0%, rgba(146,94,255,.9) 100%);
-    margin: auto;
-    max-width:90%;
-    margin-bottom:.25em;
-    border-radius: 1em;
-    border-top-right-radius: .5em;
-    border-bottom-left-radius: .5em;
-    backdrop-filter: blur(10px);
-}
-
-.sub-label {
-    font-size: 1.5em;
-    text-align: center;
-    font-family: Kanit;
-    font-weight: 800;
-    color: white;
-    background-image: linear-gradient(0deg, rgba(117,0,255,.5) 0%, rgba(146,94,255,.9) 100%);
-    max-width: 80%;
-    margin: auto;
-    margin-bottom: .5em;
-    border-radius: 1em;
-    border-top-right-radius: .5em;
-    border-bottom-left-radius: .5em;
-    backdrop-filter: blur(10px);
-}
-
-.gametabs {
-    width:100%;
-    margin:auto;
-    padding: 40px 0px 40px 0px;
-}
-
-.gamepanel {
-    transform: skew(-5deg) translateY(0px);
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    padding: 7px 20px 7px 20px;
-    border-radius: 25px;
-    min-height: 4em;
-    transition: .2s;
-    width: 80%;
-    box-shadow: 10px 10px 12px 0px #220040;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-}
-
-    .gamepanel:hover {
-        transform: skew(-15deg) translateY(-10px) scale(1.05);
-    }
-    /*
-    .gamepanel:active {
-        transform: skew(-10deg) translateY(-7px) scale(0.95);
-    }
-    */
-
-.game-img {
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
     height: 100%;
-    z-index: -10;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
-}
-
-.panel-name {
-    font-size: 1.75em;
-    text-align: left;
-    float: left;
-    width: 75%;
-    font-family: Kanit;
-    font-weight: 500;
-    color: white;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    text-shadow: 2px 2px 10px #000000;
-}
-
-.panel-subtext {
-    font-size: 1em;
-    text-align: left;
-    float: left;
-    width: 75%;
-    font-family: Kanit;
-    font-weight: 500;
-    color: white;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-    text-shadow: 2px 2px 10px #000000;
+    background-image: linear-gradient(to top, #a434eb, #dda6ff);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding:0;
 }
 
 p {
-    color: white;
-    font-size: 22px;
-    font-family: Kanit;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    color:white;
+    font-family:Fira Sans;
 }
 
-.uo-list {
+a, h1, h2 {
     color: white;
-    font-size: 22px;
-    font-family: Kanit;
-    text-align: left;
+    font-family: Fira Sans;
+}
+
+hr {
+    color:white;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "content menu"
+        "content links"
+        "content empty"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+}
+
+.panel {
+    border-radius:5px;
+    background-image: linear-gradient(#5d0f85AA, #370152AA);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    box-shadow: 10px 10px 0px #44006666;
+    margin: 10px;
+}
+
+#title {
+    font-family: Zen Dots;
+    font-size: 3em;
+    margin: 0;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    transition-duration: 0.2s;
+    text-shadow: 0px 0px #000000;
+}
+
+    #title:hover {
+        transition-duration: 0.2s;
+        text-shadow: 0px 4px #00000055;
+    }
+
+    #title:active {
+        transition-duration: 0.2s;
+        text-shadow: 0px 8px #000000BB;
+    }
+
+#main-content {
+    grid-area:content;
+}
+
+#side-bar {
+    grid-area: menu;
+}
+
+#links {
+    grid-area: links;
+}
+
+#header {
+    grid-area:header;
+}
+
+#footer {
+    grid-area:footer;
+}
+
+#link {
+    display: block;
+    background-image: linear-gradient(rgba(50, 0, 90, 25%), rgba(5, 0, 25, 25%));
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px;
+    transition-duration: 0.2s;
+    box-shadow: 0px 0px black;
+}
+
+    #link:hover {
+        background-image: linear-gradient(rgba(50, 0, 90, 50%), rgba(5, 0, 25, 50%));
+        transition-duration: 0.25s;
+        box-shadow: 0px 2.5px white;
+    }
+
+    #link:active {
+        background-image: linear-gradient(rgba(30, 0, 60, 50%), rgba(0, 0, 15, 50%));
+        transition-duration:0.1s;
+    }
+
+#rabbitContainer {
+    position: fixed;
 }
 
 iframe {
-    border: 5px solid rgba(147, 112, 219, 1);
-    border-radius: 10px;
-    max-width: 90%;
+    border: 5px solid white;
 }
 
-.alink {
-    background-image: linear-gradient(to top, #5b00a3 20%, #ab4bff);
-    border: 3px solid #bc70ff;
-    padding: 4px 16px 2px 16px;
-    white-space: nowrap;
-    color: white;
-    text-align:center;
-    text-decoration: none;
-    border-radius: 8px;
-    float: right;
-    font-family: Kanit;
-    margin-left:5px;
-}
-
-.panel-links {
-    clear: both;
-    text-align: center;
-    overflow-wrap: normal;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+li {
+    color:white;
 }
