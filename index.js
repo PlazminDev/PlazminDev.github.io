@@ -78,6 +78,7 @@ function addBunny() {
     if (rabbits.length > 0 && document.getElementById("killrabbits") == null) {
         const killRabbitsButton = document.createElement("button");
         const _cont = document.createTextNode("remove bunnies");
+        killRabbitsButton.style = "left: 10px";
         killRabbitsButton.id = "killrabbits";
         killRabbitsButton.addEventListener("click", destroyBunnies);
 
@@ -85,6 +86,19 @@ function addBunny() {
         killRabbitsButton.appendChild(_cont);
 
         document.body.appendChild(killRabbitsButton);
+    }
+
+    if (rabbits.length >= 500 && document.getElementById("duplicaterabbits") == null) {
+        const dupRabbitsButton = document.createElement("button");
+        const _cont = document.createTextNode("2x");
+        dupRabbitsButton.id = "duplicaterabbits";
+        dupRabbitsButton.style = "left: 140px";
+        dupRabbitsButton.addEventListener("click", duplicateRabbits);
+
+        dupRabbitsButton.className = "killRabbits";
+        dupRabbitsButton.appendChild(_cont);
+
+        document.body.appendChild(dupRabbitsButton);
     }
 
     if (document.getElementById("killrabbits") != null) {
@@ -102,10 +116,21 @@ function destroyBunnies() {
     if (button != null) {
         button.remove();
     }
+    var button2 = document.getElementById("duplicaterabbits");
+    if (button2 != null) {
+        button2.remove();
+    }
 
     for (let i = 0; i < rabbits.length; i++) {
         rabbits[i].element.remove();
     }
 
     rabbits = [];
+}
+
+function duplicateRabbits() {
+    let len = rabbits.length;
+    for (let i = 0; i < len; i++) {
+        addBunny();
+    }
 }
