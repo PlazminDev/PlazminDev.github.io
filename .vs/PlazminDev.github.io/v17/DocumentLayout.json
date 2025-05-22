@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|c:\\users\\david\\source\\repos\\plazmindev.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|c:\\users\\david\\source\\repos\\plazmindev.github.io\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|solutionrelative:index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|c:\\users\\david\\source\\repos\\plazmindev.github.io\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\Users\\David\\source\\repos\\PlazminDev.github.io|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\PlazminDev.github.io\\styles.css",
+              "RelativeDocumentMoniker": "styles.css",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\PlazminDev.github.io\\styles.css",
+              "RelativeToolTip": "styles.css",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-22T15:39:49.782Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\David\\source\\repos\\PlazminDev.github.io\\index.js",
+              "RelativeDocumentMoniker": "index.js",
+              "ToolTip": "C:\\Users\\David\\source\\repos\\PlazminDev.github.io\\index.js",
+              "RelativeToolTip": "index.js",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAgwFoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-05-22T15:39:13.22Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +62,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\David\\source\\repos\\PlazminDev.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-05-22T15:37:16.854Z",
               "EditorCaption": ""
