@@ -74,7 +74,38 @@ function addBunny() {
     document.getElementById("rabbitContainer").appendChild(newBunny);
 
     rabbits.push(new Rabbit(newBunny, Math.random() > 0.5 ? -1 : 1, Math.random() > 0.5 ? -1 : 1));
-    if (rabbits.length == 100) {
-        console.log("many a buny");
+
+    if (rabbits.length > 0 && document.getElementById("killrabbits") == null) {
+        const killRabbitsButton = document.createElement("button");
+        const _cont = document.createTextNode("remove bunnies");
+        killRabbitsButton.id = "killrabbits";
+        killRabbitsButton.addEventListener("click", destroyBunnies);
+
+        killRabbitsButton.className = "killRabbits";
+        killRabbitsButton.appendChild(_cont);
+
+        document.body.appendChild(killRabbitsButton);
     }
+
+    if (document.getElementById("killrabbits") != null) {
+        if (rabbits.length > 100) {
+            document.getElementById("killrabbits").innerHTML = "ok thats enough";
+        }
+        if (rabbits.length > 1000) {
+            document.getElementById("killrabbits").innerHTML = "end it";
+        }
+    }
+}
+
+function destroyBunnies() {
+    var button = document.getElementById("killrabbits");
+    if (button != null) {
+        button.remove();
+    }
+
+    for (let i = 0; i < rabbits.length; i++) {
+        rabbits[i].element.remove();
+    }
+
+    rabbits = [];
 }
