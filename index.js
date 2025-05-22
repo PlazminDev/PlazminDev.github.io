@@ -10,8 +10,13 @@ class Rabbit {
         this.element = element;
         this.dx = dx;
         this.dy = dy;
+        this.speed = remap(Math.random(), 0, 1, 0.5, 1.0);
         this.scale = 0;
     }
+}
+
+function remap(value, from1, to1, from2, to2) {
+    return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
 }
 
 function onLoad() {
@@ -33,8 +38,8 @@ function tick(now) {
             var top = parseFloat(element.style.top);
             var left = parseFloat(element.style.left);
 
-            top = (top + (elapsed * 200 * rabbit.dy));
-            left = (left + (elapsed * 300 * rabbit.dx));
+            top = (top + (elapsed * 200 * rabbit.dy * rabbit.speed));
+            left = (left + (elapsed * 300 * rabbit.dx * rabbit.speed));
 
             if (top < 0 && rabbit.dy < 0) {
                 rabbit.dy = 1;
