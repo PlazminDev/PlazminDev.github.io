@@ -37,7 +37,7 @@
                 <h2 style="text-align:center">
                     Latest Blog Post:
                 </h2>
-                <p style="text-align:center">No Blog Posts.</p>
+                <p style="text-align:center">No blog posts yet.</p>
                 <hr>
             </div>
             <div class="panel" id="side-bar">
@@ -45,7 +45,7 @@
                 <hr>
                 <a id="link" href="index.html">Home</a>
                 <a id="link" href="about.html">About</a>
-                <!--<a id="link" href="index.html">Blog</a>-->
+                <a id="link" href="blog.html">Blog</a>
             </div>
             <div class="panel" id="links">
                 <h1 style="text-align:center;">Links</h1>
@@ -57,17 +57,25 @@
             </div>
             <div class="panel" id="footer">
                 <h2 style="text-align:center">Contact</h2>
-                <p style="text-align:center">
+                <p id="contactthing" style="text-align:center">
                     Want to talk about something?
                     Have a question?
-                    Want to hear me rant about how Celeste is the best game ever created?
                 </p>
-                <a id="link" href="mailto:endermanrapman@gmail.com"><i>Email Me!</a>
+                <a id="link" href="mailto:endermanrapman@gmail.com"><i>Email Me! (endermanrapman@gmail.com)</i></a>
                 <p>Violet Mignone 2007-2025</p>
             </div>
         </div>
-        <div id="rabbitContainer">
-
-        </div>
+        <script>
+            var options = [
+                "Want me to rant about how Celeste is the greatest game ever made?",
+                "Want me to show you a picture of my rabbits?",
+                "Want me to give you Mario Kart Wii tips?",
+                "Want to give me one quadrillion dollars?",
+                "Want a Dead End Teaser?",
+            ];
+            var randomOption = options[Math.floor(Math.random() * options.length)];
+            document.getElementById("contactthing").innerHTML = "Want to talk about something? Have a question? " + randomOption;
+        </script>
+        <div id="rabbitContainer"></div>
     </body>
 </html>

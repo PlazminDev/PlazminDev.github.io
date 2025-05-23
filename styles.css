@@ -99,13 +99,13 @@ hr {
         transition-duration: 0.3s;
         text-shadow: 0px 8px #00000055;
         transform: scale(1.1, 1.1);
-        transition-timing-function: cubic-bezier(.25,5.04,.89,.34);
+        transition-timing-function: cubic-bezier(.25, 2.0,.89,.34);
     }
 
     #title:active {
         transition-duration: 0.1s;
         text-shadow: 0px 4px #00000055;
-        transform: scale(1.3, 0.7);
+        transform: scale(1.1, 0.9);
         transition-timing-function: cubic-bezier(.07,.85,.09,.97);
     }
 

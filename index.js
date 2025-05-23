@@ -39,7 +39,7 @@ function tick(now) {
             var left = parseFloat(element.style.left);
 
             top = (top + (elapsed * 200 * rabbit.dy * rabbit.speed));
-            left = (left + (elapsed * 300 * rabbit.dx * rabbit.speed));
+            left = (left + (elapsed * 200 * rabbit.dx * rabbit.speed));
 
             if (top < 0 && rabbit.dy < 0) {
                 rabbit.dy = 1;
@@ -48,10 +48,10 @@ function tick(now) {
                 rabbit.dx = 1;
 
             }
-            if (top > window.innerHeight && rabbit.dy > 0) {
+            if (top > window.innerHeight - 32 && rabbit.dy > 0) {
                 rabbit.dy = -1;
             }
-            if (left > window.innerWidth && rabbit.dx > 0) {
+            if (left > window.innerWidth - 32 && rabbit.dx > 0) {
                 rabbit.dx = -1;
             }
 
