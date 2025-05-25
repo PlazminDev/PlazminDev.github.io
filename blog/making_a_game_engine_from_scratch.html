@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <title>Plazmin's Website!</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link href="favicon.ico" rel="icon" />
+    <link href="../styles.css" rel="stylesheet" />
+    <link href="../favicon.ico" rel="icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,33 +20,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
 </head>
 <body onload="onLoad()">
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
     <div class="container">
         <div class="panel" id="header">
             <h1 onclick="addBunny()" id="title" style="text-align:center">PLAZMIN</h1>
             <!--<button onclick="addBunny()">Rabbit</button>-->
         </div>
         <div class="panel" id="main-content">
-            <h1 style="text-align:center">
-                Blog
-            </h1>
+            <h1>Making A Game From Scratch</h1>
+            <h2>May 23, 2025</h2>
+            <img src="../blogthumbnails/magefs.png" class="blog-banner"/>
             <hr />
-            <!--BLOG ENTRIES-->
-            <!--
-            <a id="link" href="blog/making_a_game_engine_from_scratch.html"
-               style="background: linear-gradient(to bottom, #6f21c277, #5c00a3B3), url(blogthumbnails/magefs.png); background-size: cover;">
-                <p style="text-align:left;">Making A Game Engine From Scratch</p>
-                <i><p style="text-align: right; color:lightgray;">May 23, 2025</p></i>
-            </a>
-            -->
-            <p style="text-align:center">No Blog Entries.</p>
+
+            <p>
+                Hi i am plazmin hi ehiemlo buny
+            </p>
         </div>
         <div class="panel" id="side-bar">
             <h1 style="text-align:center;">Directory</h1>
             <hr>
-            <a id="link" href="index.html">Home</a>
-            <a id="link" href="about.html">About</a>
-            <a id="link" href="blog.html">Blog</a>
+            <a id="link" href="../index.html">Home</a>
+            <a id="link" href="../about.html">About</a>
+            <a id="link" href="../blog.html">Blog</a>
         </div>
         <div class="panel" id="links">
             <h1 style="text-align:center;">Links</h1>
@@ -58,8 +53,6 @@
             <a id="link" target="_blank" href="https://plazmin.itch.io"><i class="fa-brands fa-itch-io" aria-hidden="true"></i> itch.io</a>
         </div>
     </div>
-    <div id="rabbitContainer">
-
-    </div>
+    <div id="rabbitContainer"></div>
 </body>
 </html>
