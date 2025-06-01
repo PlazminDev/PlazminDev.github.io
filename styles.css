@@ -169,6 +169,35 @@ li {
     color:white;
 }
 
+.gamecontainer {
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "1 2 3";
+}
+
+.gamelink {
+    transition-duration: 0.15s;
+    border-radius: 15px;
+    box-shadow: 0px 8px 0px #440066CF;
+    max-width:100%;
+    transform:scale(0.9, 0.9);
+}
+
+    .gamelink:hover {
+        transition-duration: 0.15s;
+        transform: perspective(400px) scale(0.95, 0.95) translateY(-10px) rotateX(5deg);
+        box-shadow: 0px 18px 0px #44006656;
+        filter: brightness(150%);
+    }
+
+    .gamelink:active {
+        transform: perspective(400px) scale(0.98, 0.98) translateY(-10px) rotateX(5deg);
+        box-shadow: 0px 8px 0px #44006656;
+        filter: brightness(120%);
+    }
+
 .blog-banner{
     block-size:fit-content;
 }

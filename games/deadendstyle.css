@@ -1,0 +1,17 @@
+﻿html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+}
+
+.logo {
+    max-width:30%;
+    margin:auto;
+    display:block;
+}
