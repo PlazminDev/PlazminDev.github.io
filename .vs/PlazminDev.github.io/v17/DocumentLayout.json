@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\PlazminDev.github.io\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|c:\\plazmindev.github.io\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|c:\\plazmindev.github.io\\.well-known\\atproto-did\\bsky.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:.well-known\\atproto-did\\bsky.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -38,15 +42,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\PlazminDev.github.io\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\PlazminDev.github.io\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAIoAAAAAAAAAAAApwKIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-27T23:24:23.135Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "bsky.txt",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\.well-known\\atproto-did\\bsky.txt",
               "RelativeDocumentMoniker": ".well-known\\atproto-did\\bsky.txt",
@@ -59,7 +76,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "blog.html",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\blog.html",
               "RelativeDocumentMoniker": "blog.html",
@@ -72,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "about.html",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\about.html",
               "RelativeDocumentMoniker": "about.html",
@@ -84,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "deadendstyle.css",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\games\\deadendstyle.css",
               "RelativeDocumentMoniker": "games\\deadendstyle.css",
@@ -96,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "deadend.html",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\games\\deadend.html",
               "RelativeDocumentMoniker": "games\\deadend.html",
@@ -108,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\styles.css",
               "RelativeDocumentMoniker": "styles.css",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "index.html",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\index.html",
               "RelativeDocumentMoniker": "index.html",
