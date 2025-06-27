@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\PlazminDev.github.io\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|c:\\plazmindev.github.io\\games\\deadend.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|c:\\plazmindev.github.io\\.well-known\\atproto-did\\bsky.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:.well-known\\atproto-did\\bsky.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|c:\\plazmindev.github.io\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|C:\\PlazminDev.github.io\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|C:\\PlazminDev.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|C:\\PlazminDev.github.io\\games\\deadend.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:games\\deadend.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -13,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|C:\\PlazminDev.github.io\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|C:\\PlazminDev.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECB0EDA2-6225-4013-B10D-A1DDF4A818D3}|C:\\PlazminDev.github.io|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +46,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "bsky.txt",
+              "DocumentMoniker": "C:\\PlazminDev.github.io\\.well-known\\atproto-did\\bsky.txt",
+              "RelativeDocumentMoniker": ".well-known\\atproto-did\\bsky.txt",
+              "ToolTip": "C:\\PlazminDev.github.io\\.well-known\\atproto-did\\bsky.txt",
+              "RelativeToolTip": ".well-known\\atproto-did\\bsky.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-27T23:23:50.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "blog.html",
+              "DocumentMoniker": "C:\\PlazminDev.github.io\\blog.html",
+              "RelativeDocumentMoniker": "blog.html",
+              "ToolTip": "C:\\PlazminDev.github.io\\blog.html",
+              "RelativeToolTip": "blog.html",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADsAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-01T03:12:45.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "about.html",
+              "DocumentMoniker": "C:\\PlazminDev.github.io\\about.html",
+              "RelativeDocumentMoniker": "about.html",
+              "ToolTip": "C:\\PlazminDev.github.io\\about.html",
+              "RelativeToolTip": "about.html",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAEMAAACJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-01T03:12:42.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "deadendstyle.css",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\games\\deadendstyle.css",
               "RelativeDocumentMoniker": "games\\deadendstyle.css",
@@ -46,20 +96,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "deadend.html",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\games\\deadend.html",
               "RelativeDocumentMoniker": "games\\deadend.html",
               "ToolTip": "C:\\PlazminDev.github.io\\games\\deadend.html",
               "RelativeToolTip": "games\\deadend.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-05-29T00:00:03.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T00:00:03.843Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\PlazminDev.github.io\\styles.css",
               "RelativeDocumentMoniker": "styles.css",
@@ -77,7 +126,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\PlazminDev.github.io\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-05-28T18:09:25.292Z"
             }
